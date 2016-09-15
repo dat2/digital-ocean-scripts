@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# first argument is url name in output directory
-# second argument is the folder to copy to it
+# $1 - url name in output directory
+# $2 - the folder to copy recursively into there
 
 mkdir -p /var/www/html/$1
-cp -r $2 /var/www/html/
+cp -r $2 /var/www/html/$1
